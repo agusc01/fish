@@ -1,10 +1,12 @@
-alias shutdown='poweroff now'
+alias shutdown='doas poweroff now'
 
 alias ..='cd ..'
 alias ...='cd ../..'
 
 alias l='ls -altrh'
 alias ll='ls -altrh | less'
+alias lg='ls -altrh | grep'
+alias lgi='ls -altrh | grep -i'
 
 alias rm='rm -vrf'
 alias cp='cp -vr'
@@ -15,6 +17,7 @@ alias grep='grep --color=auto'
 
 alias g='git'
 alias ga='git add'
+alias gd='git diff'
 alias gs='git status'
 alias gss='git status -s'
 alias gct='git commit'
@@ -27,6 +30,9 @@ alias dc='cd /Documents'
 alias img='cd /Pictures'
 
 alias r='ranger'
+alias v='gwemview'
+alias view='gwemview'
+alias calender='cal'
 alias nv='git pull && nvim .'
 alias w='curl wttr.in'
 alias weather='curl wttr.in'
@@ -49,7 +55,7 @@ alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $
 
 alias ufish='source "$HOME/.config/fish/config.fish" && source "$HOME/.config/fish/fish_aliases.fish"'
 
-alias udemnu='cd $HOME/.config/dmenu & doas make clean install && doas dos2unix /usr/local/bin/dmenu_run && doas dos2unix /usr/local/bin/dmenu_path'
+alias udmenu='cd $HOME/.config/dmenu & doas make clean install && doas dos2unix /usr/local/bin/dmenu_run_desktop && doas dos2unix /usr/local/bin/dmenu_path_desktop'
 alias udwm='cd $HOME/.config/dwm && doas make clean install'
 alias ust='cd $HOME/.config/st && doas make clean install'
 alias udwmblocks='cd $HOME/.config/dwmblocks & doas make clean install'
