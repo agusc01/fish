@@ -55,5 +55,6 @@ alias ufish='source "$HOME/.config/fish/config.fish" && source "$HOME/.config/fi
 alias udmenu='cd $HOME/.config/dmenu && sudo rm config.h && sudo make clean install && sudo dos2unix /usr/local/bin/dmenu_run && sudo dos2unix /usr/local/bin/dmenu_path'
 alias udwm='cd $HOME/.config/dwm && sudo rm config.h && sudo make clean install'
 alias udbar='cd $HOME/.config/dbar && sudo rm config.h && sudo make clean install'
-alias ust='cd $HOME/.config/st && sudo rm config.h && sudo make clean install'
+alias udshortcuts='cd $HOME/.config/dshortcuts && sudo rm config.h && sudo make clean install'
 alias uslock='cd $HOME/.config/slock && sudo rm config.h && sudo make clean install'
+alias ust='cd $HOME/.config/st && sudo rm config.h && sudo make clean install'
