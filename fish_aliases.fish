@@ -17,6 +17,7 @@ alias grep='grep --color=auto'
 
 alias g='git'
 alias ga='git add'
+alias gau='git add -u'
 alias gs='git status'
 alias gss='git status -s'
 alias gct='git commit'
