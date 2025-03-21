@@ -1,12 +1,12 @@
-alias shutdown='poweroff now'
 
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias l='ls -altrh'
-alias ll='ls -altrh | less'
-alias lg='ls -altrh | grep'
-alias lgi='ls -altrh | grep -i'
+alias l='ls -alh'
+alias lb='ls -alh | bat'
+alias lf='ls -alrh | fzf'
+alias lg='ls -alh | grep'
+alias lgi='ls -alh | grep -i'
 
 alias rm='rm -vrf'
 alias cp='cp -vr'
@@ -33,7 +33,12 @@ alias r='ranger'
 alias nv='git pull && nvim .'
 alias w='curl wttr.in'
 alias weather='curl wttr.in'
+alias bat='batcat'
+alias man2='tldr'
+alias fzf='fzf --reverse'
 
+alias ggit='lazygit'
+alias nn='lazynpm'
 alias nr='npm run'
 
 alias wifiset='sudo vim /etc/wpa_supplicant/wpa_supplicant.conf'
@@ -50,7 +55,7 @@ alias b1='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -
 alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}"'
 alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}"'
 
-alias ufish='source "$HOME/.config/fish/config.fish" && source "$HOME/.config/fish/fish_aliases.fish"'
+alias ufish='source "$HOME/.config/fish/config.fish" && source "$HOME/.config/fish/fish_aliases.fish" && source "$HOME/.config/fish/functions/falias.fish"'
 
 alias udmenu='cd $HOME/.config/dmenu && sudo rm config.h && sudo make clean install && sudo dos2unix /usr/local/bin/dmenu_run && sudo dos2unix /usr/local/bin/dmenu_path'
 alias udwm='cd $HOME/.config/dwm && sudo rm config.h && sudo make clean install'

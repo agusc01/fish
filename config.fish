@@ -12,5 +12,9 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 if test -f ~/.config/fish/fish_aliases.fish
-	source ~/.config/fish/fish_aliases.fish
+    source ~/.config/fish/fish_aliases.fish
+end
+
+if test -f ~/.config/fish/functions/fish_aliases.fish
+    source ~/.config/fish/functions/fish_aliases.fish
 end
