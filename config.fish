@@ -30,3 +30,7 @@ end
 if test -f ~/.config/fish/functions/lfp.fish
     source ~/.config/fish/functions/lfp.fish
 end
+
+if test -f ~/.config/fish/functions/ffind.fish
+    source ~/.config/fish/functions/ffind.fish
+end
