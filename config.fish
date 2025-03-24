@@ -22,3 +22,11 @@ end
 if test -f ~/.config/fish/functions/history.fish
     source ~/.config/fish/functions/history.fish
 end
+
+if test -f ~/.config/fish/functions/rr.fish
+    source ~/.config/fish/functions/rr.fish
+end
+
+if test -f ~/.config/fish/functions/lfp.fish
+    source ~/.config/fish/functions/lfp.fish
+end

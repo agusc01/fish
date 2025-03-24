@@ -1,4 +1,3 @@
-
 function falias
     set command (cat ~/.config/fish/fish_aliases.fish | fzf)
     set current_command (echo $command | awk -F'=' '{print $2}' | tr -d "'")

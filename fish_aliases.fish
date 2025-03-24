@@ -1,11 +1,9 @@
-
 alias ..='cd ..'
 alias ...='cd ../..'
 
 alias l='ls -alh'
 alias lb='ls -alh | bat'
 alias lf='ls -alh | fzf'
-alias lfp='ls -ah | fzf --preview "bat {}" --header "SELECT A FILE" --height 80%'
 alias lg='ls -alh | grep'
 alias lgi='ls -alh | grep -i'
 
@@ -35,8 +33,9 @@ alias dk='cd ~/Desktop'
 alias dc='cd ~/Documents'
 alias img='cd ~/Pictures'
 
+alias calias='cd ~/.config/fish && nv'
+
 alias r='ranger'
-alias rr='ls -l | fzf --height 90% --preview "echo {} | awk '\''{for(i=9;i<=NF;i++) printf \$i (i<NF?\" \":\"\n\");}'\'' | xargs -I {} batcat --style=numbers --color=always {}"'
 alias open='thunar'
 alias nv='git pull && nvim .'
 alias w='curl wttr.in'
@@ -63,11 +62,18 @@ alias b1='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -
 alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}"'
 alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}"'
 
-alias ufish='source "$HOME/.config/fish/config.fish"'
+alias ufish='source ~/.config/fish/config.fish'
 
-alias udmenu='cd $HOME/.config/dmenu && touch config.h && sudo rm config.h && sudo make clean install && sudo dos2unix /usr/local/bin/dmenu_run && sudo dos2unix /usr/local/bin/dmenu_path'
-alias udwm='cd $HOME/.config/dwm && touch config.h && sudo rm config.h && sudo make clean install'
-alias udbar='cd $HOME/.config/dbar && touch config.h && sudo rm config.h && sudo make clean install'
-alias udshortcuts='cd $HOME/.config/dshortcuts && touch config.h && sudo rm config.h && sudo make clean install'
-alias uslock='cd $HOME/.config/slock && touch config.h && sudo rm config.h && sudo make clean install'
-alias ust='cd $HOME/.config/st && touch config.h && sudo rm config.h && sudo make clean install'
+alias cdmenu='cd ~/.config/dmenu/ && nv'
+alias cdwm='cd ~/.config/dwm/ && nv'
+alias cdbar='cd ~/.config/dbar/ && nv'
+alias cdshortcuts='cd ~/.config/dshortcuts/ && nv'
+alias cslock='cd ~/.config/slock/ && nv'
+alias cst='cd ~/.config/st/ && nv'
+
+alias udmenu='cd ~/.config/dmenu/ && touch config.h && sudo rm config.h && sudo make clean install && sudo dos2unix /usr/local/bin/dmenu_run && sudo dos2unix /usr/local/bin/dmenu_path'
+alias udwm='cd ~/.config/dwm/ && touch config.h && sudo rm config.h && sudo make clean install'
+alias udbar='cd ~/.config/dbar/ && touch config.h && sudo rm config.h && sudo make clean install'
+alias udshortcuts='cd ~/.config/dshortcuts/ && touch config.h && sudo rm config.h && sudo make clean install'
+alias uslock='cd ~/.config/slock/ && touch config.h && sudo rm config.h && sudo make clean install'
+alias ust='cd ~/.config/st/ && touch config.h && sudo rm config.h && sudo make clean install'
