@@ -14,23 +14,3 @@ set -g theme_hostname always
 if test -f ~/.config/fish/fish_aliases.fish
     source ~/.config/fish/fish_aliases.fish
 end
-
-if test -f ~/.config/fish/functions/falias.fish
-    source ~/.config/fish/functions/falias.fish
-end
-
-if test -f ~/.config/fish/functions/history.fish
-    source ~/.config/fish/functions/history.fish
-end
-
-if test -f ~/.config/fish/functions/rr.fish
-    source ~/.config/fish/functions/rr.fish
-end
-
-if test -f ~/.config/fish/functions/lfp.fish
-    source ~/.config/fish/functions/lfp.fish
-end
-
-if test -f ~/.config/fish/functions/ffind.fish
-    source ~/.config/fish/functions/ffind.fish
-end

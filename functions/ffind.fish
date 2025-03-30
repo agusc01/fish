@@ -1,3 +1,8 @@
+# fzf find
 function ffind
-    find / -name "$argv" 2>/dev/null
+    if test -n "$argv"
+        find / -name "$argv" 2>/dev/null
+    else
+        echo "Aborted ! You do not give me any argument"
+    end
 end

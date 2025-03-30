@@ -6,6 +6,6 @@ function lfp
         echo -e "eval:nvim $file\n"
         eval "nvim $file"
     else
-        echo "Aborted !"
+        echo "aborted !"
     end
 end
