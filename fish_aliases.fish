@@ -40,6 +40,8 @@ alias img='cd ~/Pictures'
 
 alias calias='cd ~/.config/fish && nv'
 
+alias nvimswap='cd /home/dev/.local/state/nvim/swap'
+
 alias r='ranger'
 alias open='thunar'
 alias nv='git pull && nvim .'
