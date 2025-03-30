@@ -38,7 +38,9 @@ alias dk='cd ~/Desktop'
 alias dc='cd ~/Documents'
 alias img='cd ~/Pictures'
 
-alias calias='cd ~/.config/fish && nv'
+alias a='apps'
+
+alias cfish='cd ~/.config/fish && nv'
 
 alias nvimswap='cd /home/dev/.local/state/nvim/swap'
 
@@ -56,6 +58,7 @@ alias xurl='hurls | copyme'
 alias ourl='hurls | xargs surf'
 alias wurl='hurls | xargs wget'
 alias rf='cd ~/.config/fish/functions/ && ranger'
+alias cpwd='pwd | copyme'
 
 alias ggit='lazygit'
 alias nn='lazynpm'
