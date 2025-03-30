@@ -1,4 +1,5 @@
-function lfp
+# fzf ls nvim
+function fln
     set file (ls -ah | grep -v "^d" | grep -v "^l" | awk "{print $9}" | fzf --preview "bat {}" --header "SELECT A FILE" --height 80%)
 
     if test -n "$file"

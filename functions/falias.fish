@@ -1,3 +1,4 @@
+# fzf alias
 function falias
     set command (cat ~/.config/fish/fish_aliases.fish | sed '/^$/d' | awk '!seen[$0]++' | fzf)
     set current_command (echo $command | awk -F'=' '{print $2}' | tr -d "'")

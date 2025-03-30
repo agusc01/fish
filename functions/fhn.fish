@@ -1,5 +1,5 @@
 # fzf history nvim
-function nh
+function fhn
     set precommands (history | grep -v 'copyme' | sed '/^$/d' | awk '!seen[$0]++')
     # TODO: allow wget
     set commands (printf "%s\n" $precommands | grep -v 'wget' | fzf)

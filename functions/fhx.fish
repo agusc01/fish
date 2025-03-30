@@ -1,6 +1,6 @@
 # fzf history copyme
-function xh
-    set precommands (history | grep -v '^xh' | grep -v 'copyme' | sed '/^$/d' | awk '!seen[$0]++')
+function fhx
+    set precommands (history | grep -v '^fhx' | grep -v 'copyme' | sed '/^$/d' | awk '!seen[$0]++')
     # TODO: allow wget
     set commands (printf "%s\n" $precommands | grep -v 'wget' | fzf)
 
