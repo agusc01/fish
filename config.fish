@@ -14,3 +14,5 @@ set -g theme_hostname always
 if test -f ~/.config/fish/fish_aliases.fish
     source ~/.config/fish/fish_aliases.fish
 end
+
+set -g URL_REGEX "(((http|https|gopher|gemini|ftp|ftps|git)://|www\\.)[a-zA-Z0-9./?=&%_-]+)"
