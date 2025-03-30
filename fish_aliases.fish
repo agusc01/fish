@@ -53,6 +53,7 @@ alias hurls='cat | grep -Eo $URL_REGEX | tr " " "\n" | fzf'
 alias xurl='hurls | copyme'
 alias ourl='hurls | xargs surf'
 alias wurl='hurls | xargs wget'
+alias rf='cd ~/.config/fish/functions/ && ranger'
 
 alias ggit='lazygit'
 alias nn='lazynpm'
