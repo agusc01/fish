@@ -40,8 +40,6 @@ alias img='cd ~/Pictures'
 
 alias a='apps'
 
-alias cfish='cd ~/.config/fish && nv'
-
 alias nvimswap='cd /home/dev/.local/state/nvim/swap'
 
 alias r='ranger'
@@ -74,16 +72,15 @@ alias wificheck='ping -c 1 -s 1 www.google.com'
 alias wifiinfo='iw dev'
 alias wifihelp='cat ~/.config/fish/fish_aliases.fish | grep "alias wifi"'
 
-alias b0='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) - 0.1" | bc | awk '\''{if ($1 < 0.1) print 0.1; else print $1}'\'') && xrandr --verbose | grep -i brightness | xargs'
-alias b1='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) + 0.1" | bc | awk '\''{if ($1 > 1) print 1; else print $1}'\'') && xrandr --verbose | grep -i brightness | xargs'
+alias b0='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) - 0.1" | bc | awk '\''{if ($1 < 0.1) print 0.1; else print $1}'\'') && xrandr --verbose | grep -i brightness | xargs && refreshdbar'
+alias b1='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) + 0.1" | bc | awk '\''{if ($1 > 1) print 1; else print $1}'\'') && xrandr --verbose | grep -i brightness | xargs && refreshdbar'
 
-alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
-alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
-alias smute='amixer set Master mute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
-alias sunmute='amixer set Master unmute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
+alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+alias smute='amixer set Master mute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+alias sunmute='amixer set Master unmute | grep -i "mono:" | awk -F"Playback " "{print \$2}" | xargs && refreshdbar'
 
-alias ufish='source ~/.config/fish/config.fish'
-
+alias cfish='cd ~/.config/fish && nv'
 alias cdmenu='cd ~/.config/dmenu/ && nv'
 alias cdwm='cd ~/.config/dwm/ && nv'
 alias cdbar='cd ~/.config/dbar/ && nv'
@@ -92,6 +89,7 @@ alias cslock='cd ~/.config/slock/ && nv'
 alias cst='cd ~/.config/st/ && nv'
 alias csurf='cd ~/.config/surf/ && nv'
 
+alias ufish='source ~/.config/fish/config.fish'
 alias udmenu='cd ~/.config/dmenu/ && sudo touch config.h && sudo rm config.h && sudo make clean install && sudo dos2unix /usr/local/bin/dmenu_run && sudo dos2unix /usr/local/bin/dmenu_path && sudo dos2unix /usr/local/bin/dmenu_run_desktop && sudo dos2unix /usr/local/bin/dmenu_path_desktop'
 alias udwm='cd ~/.config/dwm/ && sudo touch config.h && sudo rm config.h && sudo make clean install'
 alias udbar='cd ~/.config/dbar/ && sudo touch config.h && sudo rm config.h && sudo make clean install'

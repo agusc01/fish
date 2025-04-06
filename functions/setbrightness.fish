@@ -15,4 +15,5 @@ function setbrightness
 
     xrandr --output eDP-1 --brightness $brightness
     echo "$(xrandr --verbose | grep -i brightness | xargs)"
+    refreshdbar
 end

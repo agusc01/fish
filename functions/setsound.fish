@@ -12,4 +12,11 @@ function setsound
     end
 
     amixer set Master "$value%" | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs
+    refreshdbar
 end
+
+# alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+# alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+# alias smute='amixer set Master mute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+# # alias sunmute='amixer set Master unmute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs && refreshdbar'
+# alias sunmute='amixer set Master unmute | grep -i "mono:" | awk -F"Playback " "{print \$2}" | xargs && refreshdbar'
