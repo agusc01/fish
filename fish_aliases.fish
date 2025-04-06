@@ -72,11 +72,13 @@ alias wificheck='ping -c 1 -s 1 www.google.com'
 alias wifiinfo='iw dev'
 alias wifihelp='cat ~/.config/fish/fish_aliases.fish | grep "alias wifi"'
 
-alias b0='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) - 0.1" | bc | awk '\''{if ($1 < 0.1) print 0.1; else print $1}'\'') && xrandr --verbose | grep -i bri | xargs'
-alias b1='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) + 0.1" | bc | awk '\''{if ($1 > 1) print 1; else print $1}'\'') && xrandr --verbose | grep -i bri | xargs'
+alias b0='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) - 0.1" | bc | awk '\''{if ($1 < 0.1) print 0.1; else print $1}'\'') && xrandr --verbose | grep -i brightness | xargs'
+alias b1='xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep -i brightness | cut -f2 -d " " | head -n 1) + 0.1" | bc | awk '\''{if ($1 > 1) print 1; else print $1}'\'') && xrandr --verbose | grep -i brightness | xargs'
 
-alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}"'
-alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}"'
+alias s0='amixer set Master 10%- | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
+alias s1='amixer set Master 10%+ | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
+alias smute='amixer set Master mute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
+alias sunmute='amixer set Master unmute | grep -i "mono:" | awk -F"Playback " "{print $2}" | xargs'
 
 alias ufish='source ~/.config/fish/config.fish'
 
