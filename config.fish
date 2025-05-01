@@ -11,8 +11,19 @@ set -g theme_display_user yes
 set -g theme_hide_hostname no
 set -g theme_hostname always
 
-if test -f ~/.config/fish/fish_aliases.fish
-    source ~/.config/fish/fish_aliases.fish
+set fish_aliases ~/.config/fish/fish_aliases.fish
+set bash_aliases ~/.bash_aliases
+set bash_globals ~/.bash_globals
+set bash_scripts ~/.bash_scripts
+
+if test -f $fish_aliases
+    source $fish_aliases
 end
 
-set -g URL_REGEX "(((http|https|gopher|gemini|ftp|ftps|git)://|www\\.)[a-zA-Z0-9./?=&%_-]+)"
+if test -f $bash_aliases
+    source $bash_aliases
+end
+
+if test -f $bash_globals
+    source $bash_globals
+end
