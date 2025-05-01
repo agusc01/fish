@@ -26,3 +26,17 @@ alias dbar_memory='bash $bash_scripts/dbar/memory'
 alias dbar_thermal='bash $bash_scripts/dbar/thermal'
 alias dbar_volume='bash $bash_scripts/dbar/volume'
 alias dbar_wifi='bash $bash_scripts/dbar/wifi'
+
+# ======================================================
+# dshortcuts
+# ======================================================
+alias dshortcuts_border='bash $bash_scripts/dshortcuts/border'
+alias dshortcuts_brightness='bash $bash_scripts/dshortcuts/brightness'
+alias dshortcuts_firefox-normal='bash $bash_scripts/dshortcuts/firefox-normal'
+alias dshortcuts_firefox-private='bash $bash_scripts/dshortcuts/firefox-private'
+alias dshortcuts_gap='bash $bash_scripts/dshortcuts/gap'
+alias dshortcuts_layout='bash $bash_scripts/dshortcuts/layout'
+alias dshortcuts_power='bash $bash_scripts/dshortcuts/power'
+alias dshortcuts_sound='bash $bash_scripts/dshortcuts/sound'
+alias dshortcuts_surf='bash $bash_scripts/dshortcuts/surf'
+alias dshortcuts_toggle='bash $bash_scripts/dshortcuts/toggle'
