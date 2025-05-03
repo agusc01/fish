@@ -13,7 +13,7 @@ alias setbrightness='bash $bash_scripts/globals/setbrightness'
 alias setsound='bash $bash_scripts/globals/setsound'
 alias b0='bash $bash_scripts/globals/b0'
 alias b1='bash $bash_scripts/globals/b1'
-alias wifii='bash $bash_scripts/globals/wifii'
+alias wifi='bash $bash_scripts/globals/wifi'
 
 # ======================================================
 # dbar
@@ -24,6 +24,7 @@ alias dbar_cpu='bash $bash_scripts/dbar/cpu'
 alias dbar_date='bash $bash_scripts/dbar/date'
 alias dbar_memory='bash $bash_scripts/dbar/memory'
 alias dbar_thermal='bash $bash_scripts/dbar/thermal'
+alias dbar_uptime='bash $bash_scripts/dbar/uptime'
 alias dbar_volume='bash $bash_scripts/dbar/volume'
 alias dbar_wifi='bash $bash_scripts/dbar/wifi'
 
