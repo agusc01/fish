@@ -2,10 +2,12 @@
 # globals
 # ======================================================
 alias apps='bash $bash_scripts/globals/apps'
+alias chistory='bash $bash_scripts/globals/chistory'
 alias falias='bash $bash_scripts/globals/falias'
 alias ffind='bash $bash_scripts/globals/ffind'
 alias fhistory='bash $bash_scripts/globals/fhistory'
 alias fsignal='bash $bash_scripts/globals/fsignal'
+alias lf='bash $bash_scripts/globals/lf'
 alias refreshdbar='bash $bash_scripts/globals/refreshdbar'
 alias rmf='bash $bash_scripts/globals/rmf'
 alias rr='bash $bash_scripts/globals/rr'
@@ -41,3 +43,4 @@ alias dshortcuts_power='bash $bash_scripts/dshortcuts/power'
 alias dshortcuts_sound='bash $bash_scripts/dshortcuts/sound'
 alias dshortcuts_surf='bash $bash_scripts/dshortcuts/surf'
 alias dshortcuts_toggle='bash $bash_scripts/dshortcuts/toggle'
+alias dshortcuts_rotation='bash $bash_scripts/dshortcuts/rotation'
