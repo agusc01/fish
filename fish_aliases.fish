@@ -16,6 +16,7 @@ alias setsound='bash $bash_scripts/globals/setsound'
 alias b0='bash $bash_scripts/globals/b0'
 alias b1='bash $bash_scripts/globals/b1'
 alias wifi='bash $bash_scripts/globals/wifi'
+alias wifiip='bash $bash_scripts/globals/wifiip'
 
 # ======================================================
 # dbar
