@@ -24,6 +24,8 @@ alias wifi='bash $bash_scripts/globals/wifi'
 alias wifiip='bash $bash_scripts/globals/wifiip'
 alias updates='bash $bash_scripts/globals/updates'
 alias msg='bash $bash_scripts/globals/msg'
+alias prompt='bash $bash_scripts/globals/prompt'
+alias bluetooth='bash $bash_scripts/globals/bluetooth'
 
 # ======================================================
 # dbar
