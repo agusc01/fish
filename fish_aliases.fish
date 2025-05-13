@@ -26,6 +26,7 @@ alias updates='bash $bash_scripts/globals/updates'
 alias msg='bash $bash_scripts/globals/msg'
 alias prompt='bash $bash_scripts/globals/prompt'
 alias bluetooth='bash $bash_scripts/globals/bluetooth'
+alias oonboard='bash $bash_scripts/globals/oonboard'
 
 # ======================================================
 # dbar
