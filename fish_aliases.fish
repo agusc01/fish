@@ -27,6 +27,10 @@ alias msg='bash $bash_scripts/globals/msg'
 alias prompt='bash $bash_scripts/globals/prompt'
 alias bluetooth='bash $bash_scripts/globals/bluetooth'
 alias oonboard='bash $bash_scripts/globals/oonboard'
+alias refreshdunst='bash $bash_scripts/globals/refreshdunst'
+alias brightness='bash $bash_scripts/globals/brightness'
+alias sound='bash $bash_scripts/globals/sound'
+alias rotation='bash $bash_scripts/globals/rotation'
 
 # ======================================================
 # dbar
