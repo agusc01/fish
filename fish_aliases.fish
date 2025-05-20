@@ -31,6 +31,7 @@ alias refreshdunst='bash $bash_scripts/globals/refreshdunst'
 alias brightness='bash $bash_scripts/globals/brightness'
 alias sound='bash $bash_scripts/globals/sound'
 alias rotation='bash $bash_scripts/globals/rotation'
+alias dbar='bash $bash_scripts/globals/dbar'
 
 # ======================================================
 # dbar
