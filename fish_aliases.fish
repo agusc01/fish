@@ -32,6 +32,7 @@ alias brightness='bash $bash_scripts/globals/brightness'
 alias sound='bash $bash_scripts/globals/sound'
 alias rotation='bash $bash_scripts/globals/rotation'
 alias dbar='bash $bash_scripts/globals/dbar'
+alias killdbar='bash $bash_scripts/globals/killdbar'
 
 # ======================================================
 # dbar
@@ -44,7 +45,6 @@ alias dbar_date='bash $bash_scripts/dbar/date'
 alias dbar_memory='bash $bash_scripts/dbar/memory'
 alias dbar_thermal='bash $bash_scripts/dbar/thermal'
 alias dbar_updates='bash $bash_scripts/dbar/updates'
-alias dbar_uptime='bash $bash_scripts/dbar/uptime'
 alias dbar_volume='bash $bash_scripts/dbar/volume'
 alias dbar_wifi='bash $bash_scripts/dbar/wifi'
 
