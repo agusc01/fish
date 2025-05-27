@@ -3,10 +3,14 @@
 # ls .bash_scripts/globals/ | xargs | sed 's/ /\n/g' | awk '{print "alias "$1"=\'bash $bash_scripts/globals/"$1"\'"}' | copyme
 # ======================================================
 alias apps='bash $bash_scripts/globals/apps'
+alias asroot='bash $bash_scripts/globals/asroot'
 alias b0='bash $bash_scripts/globals/b0'
 alias b1='bash $bash_scripts/globals/b1'
 alias bluetooth='bash $bash_scripts/globals/bluetooth'
 alias brightness='bash $bash_scripts/globals/brightness'
+alias c0='bash $bash_scripts/globals/c0'
+alias c1='bash $bash_scripts/globals/c1'
+alias camerastatus='bash $bash_scripts/globals/camerastatus'
 alias chistory='bash $bash_scripts/globals/chistory'
 alias dbar='bash $bash_scripts/globals/dbar'
 alias falias='bash $bash_scripts/globals/falias'
@@ -14,7 +18,10 @@ alias ffind='bash $bash_scripts/globals/ffind'
 alias fhistory='bash $bash_scripts/globals/fhistory'
 alias fsignal='bash $bash_scripts/globals/fsignal'
 alias killdbar='bash $bash_scripts/globals/killdbar'
+alias layout='bash $bash_scripts/globals/layout'
 alias lf='bash $bash_scripts/globals/lf'
+alias m0='bash $bash_scripts/globals/m0'
+alias m1='bash $bash_scripts/globals/m1'
 alias msg='bash $bash_scripts/globals/msg'
 alias oonboard='bash $bash_scripts/globals/oonboard'
 alias prompt='bash $bash_scripts/globals/prompt'
@@ -29,12 +36,12 @@ alias setbrightness='bash $bash_scripts/globals/setbrightness'
 alias setsound='bash $bash_scripts/globals/setsound'
 alias smute='bash $bash_scripts/globals/smute'
 alias sound='bash $bash_scripts/globals/sound'
+alias sslock='bash $bash_scripts/globals/sslock'
 alias stogglemute='bash $bash_scripts/globals/stogglemute'
 alias sunmute='bash $bash_scripts/globals/sunmute'
 alias updates='bash $bash_scripts/globals/updates'
 alias wifi='bash $bash_scripts/globals/wifi'
 alias wifiip='bash $bash_scripts/globals/wifiip'
-
 
 # ======================================================
 # dbar
@@ -43,13 +50,16 @@ alias wifiip='bash $bash_scripts/globals/wifiip'
 alias dbar_battery='bash $bash_scripts/dbar/battery'
 alias dbar_bluetooth='bash $bash_scripts/dbar/bluetooth'
 alias dbar_brightness='bash $bash_scripts/dbar/brightness'
+alias dbar_camera='bash $bash_scripts/dbar/camera'
 alias dbar_cpu='bash $bash_scripts/dbar/cpu'
 alias dbar_date='bash $bash_scripts/dbar/date'
 alias dbar_memory='bash $bash_scripts/dbar/memory'
+alias dbar_microphone='bash $bash_scripts/dbar/microphone'
 alias dbar_thermal='bash $bash_scripts/dbar/thermal'
 alias dbar_updates='bash $bash_scripts/dbar/updates'
 alias dbar_volume='bash $bash_scripts/dbar/volume'
 alias dbar_wifi='bash $bash_scripts/dbar/wifi'
+
 
 # ======================================================
 # dshortcuts
@@ -66,3 +76,21 @@ alias dshortcuts_rotation='bash $bash_scripts/dshortcuts/rotation'
 alias dshortcuts_sound='bash $bash_scripts/dshortcuts/sound'
 alias dshortcuts_surf='bash $bash_scripts/dshortcuts/surf'
 alias dshortcuts_toggle='bash $bash_scripts/dshortcuts/toggle'
+
+# ======================================================
+# rofi
+# ls .bash_scripts/rofi/ | xargs | sed 's/ /\n/g' | awk '{print "alias rofi_"$1"=\'bash $bash_scripts/rofi/"$1"\'"}' | copyme
+# ======================================================
+alias rofi_askpass='bash $bash_scripts/rofi/askpass'
+alias rofi_brightness='bash $bash_scripts/rofi/brightness'
+alias rofi_camera='bash $bash_scripts/rofi/camera'
+alias rofi_filebrowser='bash $bash_scripts/rofi/filebrowser'
+alias rofi_internet='bash $bash_scripts/rofi/internet'
+alias rofi_launcher='bash $bash_scripts/rofi/launcher'
+alias rofi_layout='bash $bash_scripts/rofi/layout'
+alias rofi_microphone='bash $bash_scripts/rofi/microphone'
+alias rofi_power='bash $bash_scripts/rofi/power'
+alias rofi_rotation='bash $bash_scripts/rofi/rotation'
+alias rofi_runner='bash $bash_scripts/rofi/runner'
+alias rofi_volume='bash $bash_scripts/rofi/volume'
+alias rofi_window='bash $bash_scripts/rofi/window'
