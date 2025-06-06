@@ -2,7 +2,6 @@
 # globals
 # ls .bash_scripts/globals/ | xargs | sed 's/ /\n/g' | awk '{print "alias "$1"=\'bash $bash_scripts/globals/"$1"\'"}' | copyme
 # ======================================================
-alias apps='bash $bash_scripts/globals/apps'
 alias asroot='bash $bash_scripts/globals/asroot'
 alias b0='bash $bash_scripts/globals/b0'
 alias b1='bash $bash_scripts/globals/b1'
@@ -37,6 +36,7 @@ alias setsound='bash $bash_scripts/globals/setsound'
 alias smute='bash $bash_scripts/globals/smute'
 alias sound='bash $bash_scripts/globals/sound'
 alias sslock='bash $bash_scripts/globals/sslock'
+alias ssuspend='bash $bash_scripts/globals/ssuspend'
 alias stogglemute='bash $bash_scripts/globals/stogglemute'
 alias sunmute='bash $bash_scripts/globals/sunmute'
 alias updates='bash $bash_scripts/globals/updates'
@@ -60,7 +60,6 @@ alias dbar_updates='bash $bash_scripts/dbar/updates'
 alias dbar_volume='bash $bash_scripts/dbar/volume'
 alias dbar_wifi='bash $bash_scripts/dbar/wifi'
 
-
 # ======================================================
 # dshortcuts
 # ls .bash_scripts/dshortcuts/ | xargs | sed 's/ /\n/g' | awk '{print "alias dshortcuts_"$1"=\'bash $bash_scripts/dshortcuts/"$1"\'"}' | copyme
@@ -78,8 +77,7 @@ alias dshortcuts_layout='bash $bash_scripts/dshortcuts/layout'
 alias dshortcuts_librewolfn='bash $bash_scripts/dshortcuts/librewolfn'
 alias dshortcuts_librewolfp='bash $bash_scripts/dshortcuts/librewolfp'
 alias dshortcuts_power='bash $bash_scripts/dshortcuts/power'
-alias dshortcuts_qutebrowsern='bash $bash_scripts/dshortcuts/qutebrowsern'
-alias dshortcuts_qutebrowserp='bash $bash_scripts/dshortcuts/qutebrowserp'
+alias dshortcuts_qutebrowser='bash $bash_scripts/dshortcuts/qutebrowser'
 alias dshortcuts_rotation='bash $bash_scripts/dshortcuts/rotation'
 alias dshortcuts_sound='bash $bash_scripts/dshortcuts/sound'
 alias dshortcuts_surf='bash $bash_scripts/dshortcuts/surf'
