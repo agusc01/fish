@@ -65,6 +65,7 @@ alias dbar_wifi='bash $bash_scripts/dbar/wifi'
 # dshortcuts
 # ls .bash_scripts/dshortcuts/ | xargs | sed 's/ /\n/g' | awk '{print "alias dshortcuts_"$1"=\'bash $bash_scripts/dshortcuts/"$1"\'"}' | copyme
 # ======================================================
+alias dshortcuts_bluetooth='bash $bash_scripts/dshortcuts/bluetooth'
 alias dshortcuts_border='bash $bash_scripts/dshortcuts/border'
 alias dshortcuts_braven='bash $bash_scripts/dshortcuts/braven'
 alias dshortcuts_bravep='bash $bash_scripts/dshortcuts/bravep'
@@ -83,6 +84,7 @@ alias dshortcuts_rotation='bash $bash_scripts/dshortcuts/rotation'
 alias dshortcuts_sound='bash $bash_scripts/dshortcuts/sound'
 alias dshortcuts_surf='bash $bash_scripts/dshortcuts/surf'
 alias dshortcuts_toggle='bash $bash_scripts/dshortcuts/toggle'
+alias dshortcuts_wifi='bash $bash_scripts/dshortcuts/wifi'
 
 # ======================================================
 # rofi
