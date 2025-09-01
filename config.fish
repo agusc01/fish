@@ -5,6 +5,8 @@ end
 set -gx EDITOR nvim
 set -gx LESS '-R -I'
 
+set fish_greeting ""
+
 set -g theme_color_scheme terminal-dark
 set -g fish_prompt_pwd_dir_length 0
 set -g theme_display_user yes
