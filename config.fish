@@ -29,3 +29,5 @@ end
 if test -f $bash_globals
     source $bash_globals
 end
+
+set -U fish_user_paths $HOME/.config/composer/vendor/bin $fish_user_paths
